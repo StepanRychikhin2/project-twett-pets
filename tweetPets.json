@@ -1,0 +1,32 @@
+{
+  "petsUser": [
+    {
+      "namePets": "tesla",
+      "owner": "my",
+      "director": "awdawdadawdawd",
+      "year": "4",
+      "id": "5"
+    },
+    {
+      "id": "12",
+      "namePets": "wwdww",
+      "owner": "ww",
+      "director": "wwww",
+      "year": "22"
+    },
+    {
+      "id": "22",
+      "namePets": "eee",
+      "owner": "eefwef",
+      "director": "sefsfe",
+      "year": "23"
+    },
+    {
+      "id": "222",
+      "namePets": "mmm",
+      "owner": "mmm",
+      "director": "mmm",
+      "year": "3444"
+    }
+  ]
+}
