@@ -120,16 +120,7 @@ z-index: 2;
 
 
 
-.fileaddInp {
-    width: 200px;
-    background: #ceffcc;
-    color: #000000;
-    padding: 12px;
-    margin: 10px auto;
-    border-radius: 5px;
-    cursor: pointer;
 
-}
 
 
 .boost-header{
@@ -208,4 +199,53 @@ gap: 30px;
 }
 .ImgUser {
     border-radius: 60px;
+}
+
+.modal-window2{
+    position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.modal-window2 .over {
+    position: absolute;
+    top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background: #000;
+opacity: 0.7;
+z-index: 0;
+}
+
+.mobalADD2 {
+    position: relative;
+z-index: 2;
+    background-color: white;
+    width: 300px;
+    height: 500px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgb(0, 0, 0,  .5);
+    padding: 30px;
+}
+.btn-close2 {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    border: none;
+    background:  none;
+    opacity: 0.5;
+}
+
+.btn-close2:hover {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    border: none;
+    background:  none;
+    opacity: 1;
 }

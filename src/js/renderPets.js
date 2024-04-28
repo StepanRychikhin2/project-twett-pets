@@ -16,19 +16,19 @@ export function renderPets() {
  
   <div class="stats">
     <p class="stats-item">
-    Імя тваринки:<br />   
+    імя тваринки:<br />   
       ${data.namePets}   
     </p>
     <p class="stats-item">
-    Власник тваринки:  <br />  
+    власник тваринки:  <br />  
       ${data.owner} 
     </p>
     <p class="stats-item">
-    Опис тваринки:<br />
+    опис тваринки:<br />
       ${data.director} 
     </p>
     <p class="stats-item">
-    Домашньому улюбленцю:<br />
+    домашньому улюбленцю:<br />
       ${2024 - data.year} роки
     </p>
   </div>
@@ -44,14 +44,5 @@ export function renderPets() {
 
 renderPets();
 
-//  var uload_image = ""
-//  fileaddInp.addEventListener("change", function() {
-//   const reader = new FileReader();
-//   reader.addEventListener("load", () => {
-//     uload_image = reader.result;
-// document.querySelector(".img-cip").style.backgroundImage = `url(${uload_image})`
-
-//   })
-//  })
 
 console.log("123");
