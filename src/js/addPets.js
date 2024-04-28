@@ -1,5 +1,4 @@
 const btnOpenmodal = document.querySelector(".button-addopen-modal")
-const idinputADD = document.querySelector(".idinput")
 const titleinputADD = document.querySelector(".titleinput")
 const genreinputADD = document.querySelector(".genreinput")
 const directorinputADD = document.querySelector(".directorinput")
@@ -8,6 +7,8 @@ const btnADD = document.querySelector(".btnADD")
 const mobalADD = document.querySelector(".modal-window")
 const btnClose = document.querySelector(".btn-close")
 const fileaddInp = document.querySelector(".fileaddInp")
+const imgCip = document.querySelector(".img-cip")
+
 console.log(fileaddInp)
 
 
@@ -24,7 +25,7 @@ export function addFruit() {
     btnADD.addEventListener("click", () => {
         mobalADD.classList.add("true")
         const newPets = {
-            id: idinputADD.value,
+            // photoPets: fileaddInp.value,
             namePets: titleinputADD.value,
             owner: genreinputADD.value,
             director: directorinputADD.value,
@@ -32,8 +33,10 @@ export function addFruit() {
         };
     
     console.log(123)
-    
-    
+        
+    console.log(newPets)
+
+
     function addMovie(newPets) {
     
             const response =  fetch('http://localhost:3000/petsUser', {
@@ -46,7 +49,7 @@ export function addFruit() {
     
     }
     console.log(321)
-    if (idinputADD.value == 0 || titleinputADD.value == 0 || genreinputADD.value == 0 || directorinputADD.value == 0 || yearinputADD.value == 0) {
+    if (titleinputADD.value == 0 || genreinputADD.value == 0 || directorinputADD.value == 0 || yearinputADD.value == 0) {
         alert("Введіть коткне значення або заповніть поля")
         console.log(333)
     } else {

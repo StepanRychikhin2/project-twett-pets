@@ -1,4 +1,8 @@
 const listPets = document.querySelector(".listPets")
+// const fileaddInp = document.querySelector(".fileaddInp")
+
+
+
 export function renderPets() {
     let myURL = `http://localhost:3000/petsUser`;
     console.log(myURL);
@@ -14,8 +18,10 @@ export function renderPets() {
             const listElem = `
   <div class="photo-card">
   <div class="photo-card2">
-  <img src="${data.webformatURL}" alt="" />
+  <img class="img-cip" src="" alt="" />
   </div>
+  <div class="img-cip"></div>
+
   <div class="stats">
     <p class="stats-item">
 
@@ -46,5 +52,14 @@ export function renderPets() {
 
  renderPets()
 
+//  var uload_image = ""
+//  fileaddInp.addEventListener("change", function() {
+//   const reader = new FileReader();
+//   reader.addEventListener("load", () => {
+//     uload_image = reader.result;
+// document.querySelector(".img-cip").style.backgroundImage = `url(${uload_image})`
+
+//   })
+//  })
 
  console.log("123")

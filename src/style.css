@@ -84,3 +84,16 @@ z-index: 2;
     background:  none;
     opacity: 1;
 }
+
+
+
+.fileaddInp {
+    width: 200px;
+    background: #ceffcc;
+    color: #000000;
+    padding: 12px;
+    margin: 10px auto;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
