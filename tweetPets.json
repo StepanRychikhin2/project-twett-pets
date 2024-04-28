@@ -1,12 +1,6 @@
 {
   "petsUser": [
     {
-      "namePets": "tesla",
-      "owner": "my",
-      "director": "awdawdadawdawd",
-      "year": "4"
-    },
-    {
       "id": "0d51",
       "namePets": "awd",
       "owner": "awd",
@@ -14,11 +8,11 @@
       "year": "23"
     },
     {
-      "id": "6705",
-      "namePets": "teslut",
-      "owner": "awdawd",
-      "director": "awdawd",
-      "year": "2000"
+      "id": "d595",
+      "namePets": "tesla",
+      "owner": "aaa",
+      "director": "awdawgrhgaetrhaethaeergw",
+      "year": "29000"
     }
   ]
 }

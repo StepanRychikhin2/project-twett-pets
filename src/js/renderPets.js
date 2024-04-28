@@ -33,6 +33,10 @@ export function renderPets() {
     </p>
   </div>
   </div>
+  <p class="stats-item">
+  id:  
+    ${data.id}   
+  </p>
 </div>
       `;
         return listElem;
