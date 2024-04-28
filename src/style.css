@@ -1,7 +1,46 @@
+body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background-image: url(../phpto/images.jpg);
+background-size: auto;
+
+
+
+}
+
+input {
+    width: 150px;
+    height: 20px;
+    border-radius: 60px;
+    border: 2px solid black;
+}
+
+h2 {
+    font-family: "Play", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.1em;
+}
+
+button {
+    font-family: "Play", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.1em;
+}
+
+p {
+    font-family: "Play", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.4em;
+}
+
 .photo-card {
     margin-left: auto;
     margin-right: auto;
-    margin-top: 50px;
+    margin-top: 150px;
     padding-top: 20px;
     background-color: rgb(4, 114, 40);
 width: 400px;
@@ -10,21 +49,13 @@ width: 400px;
     box-shadow: inset 1px 1px 4px rgb(0, 0, 0), inset -1px -1px 4px rgb(0, 0, 0);
 }
 
-.photo-card2{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-}
 .true {
     visibility: hidden;
 }
 
 .stats{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 15px;
+padding-left: 15px;
+    padding-top: 1px;
 }
 
 .listPets {
@@ -33,8 +64,10 @@ width: 400px;
 
 
 .stats-item{
+    color: rgb(255, 255, 255);
     margin-left: 20px;
-    text-shadow: 5px 3px 3px rgb(121, 252, 164);
+    text-shadow: 1.5px 1px 7px rgb(0, 0, 0);
+    padding-top: 1px;
 }
 .modal-window{
     position: fixed;
@@ -96,4 +129,83 @@ z-index: 2;
     border-radius: 5px;
     cursor: pointer;
 
+}
+
+
+.boost-header{
+    padding-top: 0;
+    margin-top: 0;
+    position: fixed;
+top: 0;
+    width: 100%;
+    height: 100px;
+    background-color: #ceffcc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.button-sing-in-modal {
+    background-color: #ceffcc;
+    border: 0;
+}
+
+.button-Sing-up-modal{
+    background-color: #ceffcc;
+    border: 0;
+}
+
+.sing-box {
+    margin-left: 800px;
+}
+
+.btn-box{
+    display: flex;
+    gap: 10px;
+}
+
+.button-addopen-modal{
+    width: 170px;
+    height: 40px;
+    border: 0;
+    border-radius: 30px;
+    box-shadow: 1px 1px 6px rgb(139, 37, 37);
+}
+
+.button-delete{
+    height: 40px;
+    width: 170px;
+    border: 0;
+    border-radius: 30px;
+    box-shadow: 1px 1px 6px rgb(139, 37, 37);
+}
+.button-onovel-modal{
+    height: 40px;
+    width: 170px;
+    border: 0;
+    border-radius: 30px;
+    box-shadow: 1px 1px 6px rgb(139, 37, 37);
+}
+
+.btnADD {
+    width: 200px;
+    height: 50px;
+    border: 1px solid black;
+    background-color: #e6e6e6;
+    border-radius: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 90px;
+}
+.btnADD-box {
+    display: flex;
+}
+.dost-bb {
+gap: 30px;
+    margin-right: 180px;
+    display: flex;
+}
+.ImgUser {
+    border-radius: 60px;
 }

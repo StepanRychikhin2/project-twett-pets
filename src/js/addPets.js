@@ -6,10 +6,8 @@ const yearinputADD = document.querySelector(".yearinput")
 const btnADD = document.querySelector(".btnADD")
 const mobalADD = document.querySelector(".modal-window")
 const btnClose = document.querySelector(".btn-close")
-const fileaddInp = document.querySelector(".fileaddInp")
-const imgCip = document.querySelector(".img-cip")
 
-console.log(fileaddInp)
+
 
 
 

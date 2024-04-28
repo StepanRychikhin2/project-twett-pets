@@ -1,56 +1,48 @@
-const listPets = document.querySelector(".listPets")
+const listPets = document.querySelector(".listPets");
 // const fileaddInp = document.querySelector(".fileaddInp")
 
-
-
 export function renderPets() {
-    let myURL = `http://localhost:3000/petsUser`;
-    console.log(myURL);
-    fetch(myURL)
-      .then((data) => data.json())
-      .then((data) => {
-  
-        const listMarkUp = data.map((data) => {
-       
-          
-            console.log(data);
+  let myURL = `http://localhost:3000/petsUser`;
+  console.log(myURL);
+  fetch(myURL)
+    .then((data) => data.json())
+    .then((data) => {
+      const listMarkUp = data.map((data) => {
+        console.log(data);
 
-            const listElem = `
+        const listElem = `
   <div class="photo-card">
   <div class="photo-card2">
-  <img class="img-cip" src="" alt="" />
-  </div>
-  <div class="img-cip"></div>
-
+ 
   <div class="stats">
     <p class="stats-item">
-
-      ${data.namePets}
+    Імя тваринки:<br />   
+      ${data.namePets}   
     </p>
     <p class="stats-item">
-
-      ${data.owner}
+    Власник тваринки:  <br />  
+      ${data.owner} 
     </p>
     <p class="stats-item">
-
-      ${data.director}
+    Опис тваринки:<br />
+      ${data.director} 
     </p>
     <p class="stats-item">
-
-      ${data.year}
+    Домашньому улюбленцю:<br />
+      ${2024 - data.year} роки
     </p>
+  </div>
   </div>
 </div>
       `;
-            return listElem;
-         
+        return listElem;
       });
       listPets.innerHTML = listMarkUp;
-      })
-      .catch((error) => console.error(error));
-  }
+    })
+    .catch((error) => console.error(error));
+}
 
- renderPets()
+renderPets();
 
 //  var uload_image = ""
 //  fileaddInp.addEventListener("change", function() {
@@ -62,4 +54,4 @@ export function renderPets() {
 //   })
 //  })
 
- console.log("123")
+console.log("123");

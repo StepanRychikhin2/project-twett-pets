@@ -9,12 +9,36 @@
     href="https://fonts.googleapis.com/icon?family=Material+Icons"
     rel="stylesheet"
   />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <button class="button-addopen-modal">add</button>
+  <header class="boost-header">
+<div class="dost-bb" >
+  <img class="ImgUser" width="70px" height="70px" src="./gostImg.jpg" alt="">
+  <p>Гість</p>
+</div>
+
+    <div class="btn-box">
+
+
+    <button class="button-addopen-modal">Добавмти Свого Улюбленця</button>
+    <button class="button-delete">Видалити поста</button>
+    <button class="button-onovel-modal">Оновити поста</button>
+  </div>
+    <div class="sing-box">
+
+    <button class="button-sing-in-modal">sing in</button>
+    <button class="button-Sing-up-modal">Sing up</button>
+  </div>
+  </header>
+
+   
     <ul class="listPets">
 
     </ul>
+    
 
 
      <div class="modal-window true">
@@ -27,10 +51,15 @@
         <h2>Ім'я Власника</h2>
         <input class="genreinput" type="text" />
         <h2>Можна описати тваринку</h2>
-        <input class="directorinput" type="text" />
+        <textarea class="directorinput"  cols="30" rows="5"></textarea>
+        <!-- <input class="directorinput" type="comment" /> -->
         <h2>Рік народження</h2>
-        <input class="yearinput" type="number" />
-        <button type="button" class="btnADD">sentt</button>
+        <input class="yearinput" type="number" /><br>
+        <div class="btnADD-box">
+
+
+        <button type="button" class="btnADD">відправити</button>
+      </div>
       </div>
       <div class="over"></div>
     </div>
