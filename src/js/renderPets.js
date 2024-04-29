@@ -29,7 +29,7 @@ export function renderPets() {
     </p>
     <p class="stats-item">
     домашньому улюбленцю:<br />
-      ${2024 - data.year} роки
+      ${2024 - data.year} років
     </p>
   </div>
   </div>
