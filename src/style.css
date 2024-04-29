@@ -2,11 +2,22 @@ body {
     margin: 0;
     padding: 0;
     border: 0;
-    background-image: url(../phpto/images.jpg);
-background-size: auto;
+height: 100%;
+background: linear-gradient(20deg, #1a2a6c,#b21f1f, #fdbb2d);
+animation: gradients 5s ease infinite;
+background-size: 150% 150%;
+}
 
-
-
+@keyframes gradients {
+    0% {
+        background-position: 0 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0 50%;
+    } 
 }
 
 input {
@@ -34,7 +45,7 @@ p {
     font-family: "Play", sans-serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 1.1em;
+    font-size: 1.2em;
 }
 
 .photo-card {
@@ -118,12 +129,29 @@ z-index: 2;
     opacity: 1;
 }
 
+.gg {
 
+    color: #fff;
+    background: linear-gradient(20deg, #8E0E00,#1F1C18);
+animation: gradients 5s ease infinite;
+background-size: 150% 150%;
+}
 
+.vv {
+    border-radius: 10px;
+    padding: 4px;
+    color: #fff;
+    background: linear-gradient(20deg, #8E0E00,#1F1C18);
+animation: gradients 5s ease infinite;
+background-size: 150% 150%;
 
+}
 
 
 .boost-header{
+    background: linear-gradient(20deg, #C02425,#F0CB35);
+animation: gradients 5s ease infinite;
+background-size: 150% 150%;
     padding-top: 0;
     margin-top: 0;
     position: fixed;
@@ -134,16 +162,18 @@ top: 0;
     display: flex;
     justify-content: center;
     align-items: center;
+
+
 }
 
 
 .button-sing-in-modal {
-    background-color: #ceffcc;
+   
     border: 0;
 }
 
 .button-Sing-up-modal{
-    background-color: #ceffcc;
+
     border: 0;
 }
 
@@ -359,4 +389,135 @@ z-index: 2;
     border: none;
     background:  none;
     opacity: 1;
+}
+
+
+.modal-window-log{
+    position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.modal-window-log .over {
+    position: absolute;
+    top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background: #000;
+opacity: 0.7;
+z-index: 0;
+}
+
+.mobalLog {
+    position: relative;
+z-index: 2;
+    background-color: white;
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgb(0, 0, 0,  .5);
+    padding: 30px;
+}
+.btn-closelog {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    border: none;
+    background:  none;
+    opacity: 0.5;
+}
+
+.btn-closelog:hover {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    border: none;
+    background:  none;
+    opacity: 1;
+}
+
+
+.modal-window-reg{
+    position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.modal-window-reg .over {
+    position: absolute;
+    top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background: #000;
+opacity: 0.7;
+z-index: 0;
+}
+
+.mobalreg {
+    position: relative;
+z-index: 2;
+    background-color: white;
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgb(0, 0, 0,  .5);
+    padding: 30px;
+}
+.btn-closereg {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    border: none;
+    background:  none;
+    opacity: 0.5;
+}
+
+.btn-closereg:hover {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    border: none;
+    background:  none;
+    opacity: 1;
+}
+.btnreg{
+    width: 200px;
+    height: 50px;
+    border: 1px solid black;
+    background-color: #e6e6e6;
+    border-radius: 40px;
+    margin-left: 35px;
+
+    margin-top: 50px;
+}
+
+.btnlog{
+    width: 200px;
+    height: 50px;
+    border: 1px solid black;
+    background-color: #e6e6e6;
+    border-radius: 40px;
+    margin-left: 35px;
+
+    margin-top: 50px;
+}
+.btnEd3 {
+    width: 200px;
+    height: 50px;
+    border: 1px solid black;
+    background-color: #e6e6e6;
+    border-radius: 40px;
+    margin-left: 35px;
+
+    margin-top: 50px;
 }
