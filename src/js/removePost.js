@@ -11,6 +11,7 @@ btnClosee.addEventListener("click", () => {
 
 
 
+
 btnOpenmodalDel.addEventListener("click", () => {
   modalWindow2.classList.remove("true");
 });
