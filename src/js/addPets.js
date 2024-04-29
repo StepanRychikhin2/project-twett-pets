@@ -23,7 +23,6 @@ export function addFruit() {
     btnADD.addEventListener("click", () => {
         mobalADD.classList.add("true")
         const newPets = {
-            // photoPets: fileaddInp.value,
             namePets: titleinputADD.value,
             owner: genreinputADD.value,
             director: directorinputADD.value,

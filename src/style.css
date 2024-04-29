@@ -260,3 +260,103 @@ z-index: 2;
     background:  none;
     opacity: 1;
 }
+
+
+.modal-window3{
+    position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.modal-window3 .over {
+    position: absolute;
+    top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background: #000;
+opacity: 0.7;
+z-index: 0;
+}
+
+.mobalADD3 {
+    position: relative;
+z-index: 2;
+    background-color: white;
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgb(0, 0, 0,  .5);
+    padding: 30px;
+}
+.btn-close3 {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    border: none;
+    background:  none;
+    opacity: 0.5;
+}
+
+.btn-close3:hover {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    border: none;
+    background:  none;
+    opacity: 1;
+}
+
+
+.modal-window4{
+    position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.modal-window4 .over {
+    position: absolute;
+    top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background: #000;
+opacity: 0.7;
+z-index: 0;
+}
+
+.mobalADD4 {
+    position: relative;
+z-index: 2;
+    background-color: white;
+    width: 300px;
+    height: 500px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgb(0, 0, 0,  .5);
+    padding: 30px;
+}
+.btn-close4 {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    border: none;
+    background:  none;
+    opacity: 0.5;
+}
+
+.btn-close4:hover {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    border: none;
+    background:  none;
+    opacity: 1;
+}
