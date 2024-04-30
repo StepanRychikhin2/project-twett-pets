@@ -16,23 +16,20 @@ btnOpenmodalDel.addEventListener("click", () => {
   modalWindow2.classList.remove("true");
 });
 
-export function removeTweet() {
+export async function removeTweet() {
+  btnDel.addEventListener("click", async () => {
+      modalWindow2.classList.add("true");
+      const petsNameToDelete = inputdel.value;
 
-  btnDel.addEventListener("click", () => {
-
-    modalWindow2.classList.add("true");
-
-
-    const petsNameToDelete = inputdel.value;
-    function deleteMovie(namePets) {
-      {
-        const response = fetch(`http://localhost:3000/petsUser/${namePets}`, {
-          method: "DELETE",
-        });
+      try {
+          const response = await fetch(`http://localhost:3000/petsUser/${petsNameToDelete}`, {
+              method: "DELETE",
+          });
+      } catch (error) {
+          console.error("error", error);
       }
-    }
-    deleteMovie(petsNameToDelete);
   });
 }
+
 
 removeTweet();

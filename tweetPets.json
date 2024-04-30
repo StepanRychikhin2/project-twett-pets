@@ -1,17 +1,10 @@
 {
   "petsUser": [
     {
-      "id": "0d51",
-      "namePets": "awd",
-      "owner": "awd",
-      "director": "awd",
-      "year": "23"
-    },
-    {
-      "namePets": "awdawd",
-      "owner": "awdawd",
-      "director": "awdawdawd",
-      "year": "123123",
+      "namePets": "Дупик",
+      "owner": "Ілля",
+      "director": "красунчик",
+      "year": "2024",
       "id": "987e"
     },
     {
@@ -20,6 +13,20 @@
       "owner": "awd",
       "director": "awd",
       "year": "1344"
+    },
+    {
+      "id": "0174",
+      "namePets": "awd",
+      "owner": "awd",
+      "director": "awd",
+      "year": "333"
+    },
+    {
+      "id": "acbe",
+      "namePets": "awd",
+      "owner": "awd",
+      "director": "awd",
+      "year": "2222"
     }
   ]
 }

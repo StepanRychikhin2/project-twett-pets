@@ -38,27 +38,31 @@ btnClosee.addEventListener("click", () =>  {
 })
 
 
-export function edit2() {
-    btn4.addEventListener("click", () => {
+export async function edit2() {
+    btn4.addEventListener("click", async () => {
         modalWindow4.classList.add("true");
-    const movieIdToUpdate = inputed.value;
-    const updatedMovieData = {
-      namePets: titleinput4.value,
-      owner: genreinput4.value,
-      director: directorinput4.value,
-      year: yearinput4.value,
-    };
-    function updateMovie(movieId, updatedData) {
-      const response = fetch(`http://localhost:3000/petsUser/${movieId}`, {
-        method: "PUT",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(updatedData),
-      });
-    }
-    updateMovie(movieIdToUpdate, updatedMovieData);
-  });
-}
+        const movieIdToUpdate = inputed.value;
+        const updatedMovieData = {
+            namePets: titleinput4.value,
+            owner: genreinput4.value,
+            director: directorinput4.value,
+            year: yearinput4.value,
+        };
 
-edit2();
+        try {
+            const response = await fetch(`http://localhost:3000/petsUser/${movieIdToUpdate}`, {
+                method: "PUT",
+                headers: {
+                    "Content-Type": "application/json",
+                },
+                body: JSON.stringify(updatedMovieData),
+            });
+
+
+          
+        } catch (error) {
+            console.error("error", error);
+        }
+    });
+}
+edit2()

@@ -41,8 +41,8 @@ const nameinpreg = document.querySelector(".nameinpreg")
 const passinpreg = document.querySelector(".passinpreg")
 const btnreg = document.querySelector(".btnreg")
 const gost = document.querySelector(".gost")
-function getName() {
-    let namereg = localStorage.getItem("login");
+async function getName() {
+    let namereg = await localStorage.getItem("login");
     if (namereg == null) {
         gost.textContent = "Гість";
         console.log(123)
