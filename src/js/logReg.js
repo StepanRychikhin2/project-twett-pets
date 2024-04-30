@@ -8,9 +8,9 @@ const buttonLogModal = document.querySelector(".button-sing-in-modal")
 const buttonRegModal = document.querySelector(".button-Sing-up-modal")
 
 
+
 buttonRegModal.addEventListener("click", () => {
     moballogWindow.classList.remove("true");
-    console.log(123)
 })
 
 btnCloselog.addEventListener("click", () => {
@@ -41,7 +41,18 @@ const nameinpreg = document.querySelector(".nameinpreg")
 const passinpreg = document.querySelector(".passinpreg")
 const btnreg = document.querySelector(".btnreg")
 const gost = document.querySelector(".gost")
-
+function getName() {
+    let namereg = localStorage.getItem("login");
+    if (namereg == null) {
+        gost.textContent = "Гість";
+        console.log(123)
+        
+    } else {
+         gost.textContent = localStorage.getItem("login");
+        
+    }
+    }
+getName()
 
 buttonLogModal.addEventListener("click", () => {
     mobalregWindow.classList.remove("true");
@@ -58,6 +69,7 @@ btnreg.addEventListener("click", () => {
 
     let passreg = localStorage.getItem("password");
     if (nameinpreg.value !== namereg || passinpreg.value !== passreg) {
+        gost.textContent = "Гість";
         alert("Ви ввели не правельний логін або пароль!!!")
     } else {
         gost.textContent = localStorage.getItem("login");
@@ -68,3 +80,4 @@ mobalregWindow.classList.add("true");
 
 
 })
+
